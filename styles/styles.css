@@ -944,10 +944,10 @@ table {
   display: inline-block;
   padding: 12px 24px !important;
   margin: 10px 5px;
-  background-color: var(--main-accent-color) !important;
+  background-color: #2563EB !important;
   color: var(--text-light) !important;
   text-decoration: none;
-  border: 2px solid var(--main-accent-color) !important;
+  border: 2px solid var#2563EB !important;
   border-radius: 4px;
   font-family: var(--heading-font-family);
   font-weight: 600;
