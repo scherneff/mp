@@ -59,7 +59,7 @@
   font-family: var(--black-font-family);
 }
 .content-fragment-wrapper .content-fragment .banner-content .banner-detail .cftitle::after {
-  background-color: var(--main-accent-color);
+  background-color: #2663EB;
   content: "";
   display: block;
   height: 5px;
