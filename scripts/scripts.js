@@ -1,4 +1,17 @@
 import {
+  runExperimentation,
+} from './experiment-loader.js';
+
+const experimentationConfig = {
+  prodHost: 'www.mysite.com', // add your prodHost here, otherwise we will show mock data
+  audiences: {
+    mobile: () => window.innerWidth < 600,
+    desktop: () => window.innerWidth >= 600,
+    // define your custom audiences here as needed
+  },
+};
+
+import {
   loadHeader,
   loadFooter,
   decorateButtons as libDecorateButtons,
@@ -305,6 +318,7 @@ async function renderWBDataLayer() {
  */
 async function loadEager(doc) {
   setPageLanguage();
+    await runExperimentation(doc, experimentationConfig);
   // Preconnect dynamically to speed up LCP fetch without hardcoding hosts
   try {
     addPreconnect(window.location.origin);
