@@ -120,10 +120,10 @@ html[dir="rtl"] .section > div.carousel-wrapper {
 }
   
 .carousel > ul > li > .cards-card-image {
-  background-color: #fcfcfc;
+  /* background-color: #fcfcfc; */
   border-radius: 10px;
   aspect-ratio: auto;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   justify-content: center;
 }

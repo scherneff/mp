@@ -29,7 +29,7 @@
   padding: 10px 0px;
 }
 .carousel-container .carousel-wrapper .carousel > ul > li {
-  display: inline-flex;
+  display: table-row;
   flex-direction: column;
   width: auto;
   min-width: initial;
@@ -46,6 +46,7 @@
 }
 .carousel-container .carousel-wrapper .carousel .cards-card-body p {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .carousel-container .carousel-wrapper .carousel .cards-card-body h1, 
@@ -56,6 +57,7 @@
 .carousel-container .carousel-wrapper .carousel .cards-card-body h6 {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .carousel-container .carousel-wrapper .carousel .cards-card-body > *:first-child {
@@ -63,8 +65,8 @@
 }
 
 .carousel-container .carousel-wrapper .carousel > ul > li img {
-  width: 100%;
-  aspect-ratio: 3 / 1.93;
+  /* width: 100%; */
+  /* aspect-ratio: 3 / 1.93; */
   object-fit: cover;
   border-radius: 4px;
 }
